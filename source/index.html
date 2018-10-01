@@ -22,7 +22,9 @@
             <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu-list__item">
-            <form class="search-to-site"></form>
+            <form class="search-to-site">
+              <input class="search-to-site__field-search" type="search" name="search" id="search-id" placeholder="Поиск:">
+            </form>
           </li>
           <li class="menu-list__item">
             <a href="order.html">Корзина: <span>пока пуста!</span></a>
@@ -30,5 +32,42 @@
         </ul>
       </nav>
     </header>
+    <main class="container-content">
+      <section class="head-title">
+        <h1 class="head-title__title">Милые штуки ручной работы для дома</h1>
+      </section>
+      <section class="catalog-products">
+        <ul class="catalog-products__list products-list">
+          <li class="products-list__item">
+            <a href="catalog.html?p=interior_items">Параметры интерьера</a>
+          </li>
+          <li class="products-list__item">
+            <a href="catalog.html?p=child_toys">Детские игрушки</a>
+          </li>
+        </ul>
+      </section>
+      <article class="top-product">
+        <h2 class="top-product__title">Вязаные корзинки</h2>
+        <p class="top-product__product-of-week">Товар недели</p>
+        <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
+        <ul class="top-product__list table">
+          <li class="top-product__list-item tr">
+            <span class="top-product__list-cell-name td">Цвет:</span>
+            <span class="top-product__list-cell-value td">"Тиффани"/серый</span>
+          </li>
+          <li class="top-product__list-item tr">
+            <span class="top-product__list-cell-name td">Диаметр:</span>
+            <span class="top-product__list-cell-value td">25 см</span>
+          </li>
+          <li class="top-product__list-item tr">
+            <span class="top-product__list-cell-name td">Высота:</span>
+            <span class="top-product__list-cell-value td">15 см</span>
+          </li>
+        </ul>
+        <img class="top-product__content-image" src="http://placehold.it/260x315" width="260" height="315">
+        <p class="top-product__price">Цена: 990 руб</p>
+        <a class="top-product__to-order btn">Заказать</a>
+      </article>
+    </main>
   </body>
 </html>
