@@ -10,8 +10,7 @@
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/logo.png" alt="Логотип &laquo;Мишка&raquo;">
         </a>
-        <a class="main-header__open-menu" href="#"></a>
-        <a class="main-header__close-menu"></a>
+        <button class="main-header__open-menu" href="#"></button>
       </div>
       <nav class="head-menu">
         <ul class="head-menu__list menu-list">
@@ -50,20 +49,20 @@
         <h2 class="top-product__title">Вязаные корзинки</h2>
         <p class="top-product__product-of-week">Товар недели</p>
         <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.</p>
-        <ul class="top-product__list table">
-          <li class="top-product__list-item tr">
-            <span class="top-product__list-cell-name td">Цвет:</span>
-            <span class="top-product__list-cell-value td">"Тиффани"/серый</span>
-          </li>
-          <li class="top-product__list-item tr">
-            <span class="top-product__list-cell-name td">Диаметр:</span>
-            <span class="top-product__list-cell-value td">25 см</span>
-          </li>
-          <li class="top-product__list-item tr">
-            <span class="top-product__list-cell-name td">Высота:</span>
-            <span class="top-product__list-cell-value td">15 см</span>
-          </li>
-        </ul>
+        <table class="top-product__table">
+          <tr class="top-product__table-tr">
+            <td class="top-product__list-cell-name">Цвет:</td>
+            <td class="top-product__list-cell-value">"Тиффани"/серый</td>
+          </tr>
+          <tr class="top-product__table-tr">
+            <td class="top-product__list-cell-name">Диаметр:</td>
+            <td class="top-product__list-cell-value">25 см</td>
+          </tr>
+          <tr class="top-product__table-tr">
+            <td class="top-product__list-cell-name">Высота:</td>
+            <td class="top-product__list-cell-value">15 см</td>
+          </tr>
+        </table>
         <img class="top-product__content-image" src="http://placehold.it/260x315" width="260" height="315">
         <p class="top-product__price">Цена: 990 руб</p>
         <a class="top-product__to-order btn">Заказать</a>
@@ -71,22 +70,22 @@
       <section class="shortly-about-us">
         <h2 class="shortly-about-us__title">Коротко о нас:</h2>
         <ul class="shortly-about-us__list">
-          <li class="shortly-about-us__list-item">
+          <li class="shortly-about-us__list-item icon_ecology">
             <p>Экологически чистые материалы</p>
           </li>
-          <li class="shortly-about-us__list-item">
+          <li class="shortly-about-us__list-item icon_scandinavia">
             <p>Скандинавский стиль по российской цене</p>
           </li>
-          <li class="shortly-about-us__list-item">
+          <li class="shortly-about-us__list-item icon_like">
             <p>Увеличивайте лайки на фотографиях</p>
           </li>
-          <li class="shortly-about-us__list-item">
+          <li class="shortly-about-us__list-item icon_manual">
             <p>Связано вручную с любовью и умилением</p>
           </li>
-          <li class="shortly-about-us__list-item">
+          <li class="shortly-about-us__list-item icon_support">
             <p>Поддержка отечественного производителя</p>
           </li>
-          <li class="shortly-about-us__list-item">
+          <li class="shortly-about-us__list-item icon_gift">
             <p>Поставляется в подарочной упаковке</p>
           </li>
         </ul>
@@ -137,10 +136,10 @@
             <a>twitter</a>
           </li>
         </ul>
-        <div class="developed-by">
-          <p class="developed-by__description">Разработано:</p>
-          <a class="developed-by__url" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </div>
+      </div>
+      <div class="developed-by">
+        <p class="developed-by__description">Разработано:</p>
+        <a class="developed-by__url" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
   </body>

@@ -7,16 +7,15 @@
   <body>
     <header class="main-header">
       <div class="main-header__logo-block">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/logo.png" alt="Логотип &laquo;Мишка&raquo;">
         </a>
-        <a class="main-header__open-menu" href="#"></a>
-        <a class="main-header__close-menu"></a>
+        <button class="main-header__open-menu" href="#"></button>
       </div>
       <nav class="head-menu">
         <ul class="head-menu__list menu-list">
-          <li class="menu-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+          <li class="menu-list__item menu_list_item_active">
+            <a>Каталог товаров</a>
           </li>
           <li class="menu-list__item">
             <a href="form.html">Вязание на заказ</a>
@@ -38,24 +37,24 @@
         <ul class="catalog-list-products list-products">
           <li class="list-products__item">
             <article class="card-product">
-              <img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195">
-              <h2 class="card-product__name">Зайчик-попрыгайчик</h2>
+              <a class="card-product__link-to-order"><img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195"></a>
+              <a class="card-product__name">Зайчик-попрыгайчик</a>
               <p class="card-product__description">Рост 30 см, вес 200 гр</p>
               <p class="card-product__price">1 200 руб.</p>
             </article>
           </li>
           <li class="list-products__item">
             <article class="card-product">
-              <img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195">
-              <h2 class="card-product__name">Корзинка для белья</h2>
+              <a class="card-product__link-to-order"><img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195"></a>
+              <a class="card-product__name">Корзинка для белья</a>
               <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
               <p class="card-product__price">690 руб.</p>
             </article>
           </li>
           <li class="list-products__item">
             <article class="card-product">
-              <img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195">
-              <h2 class="card-product__name">Большая корзинка для игрушек</h2>
+              <a class="card-product__link-to-order"><img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195"></a>
+              <a class="card-product__name">Большая корзинка для игрушек</a>
               <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
               <p class="card-product__price">1 500 руб.</p>
             </article>
@@ -82,11 +81,21 @@
             <a>twitter</a>
           </li>
         </ul>
-        <div class="developed-by">
-          <p class="developed-by__description">Разработано:</p>
-          <a class="developed-by__url" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </div>
+      </div>
+      <div class="developed-by">
+        <p class="developed-by__description">Разработано:</p>
+        <a class="developed-by__url" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
+    <div class="modal-add-product">
+      <h2 class="modal-add-product__title">Добавить в корзину</h2>
+      <p class="modal-add-product__description">Выберите размер:</p>
+      <ul class="modal-add-product__list">
+        <li class="modal-add-product__list-item"><a>S</a></li>
+        <li class="modal-add-product__list-item"><a>M</a></li>
+        <li class="modal-add-product__list-item"><a>L</a></li>
+      </ul>
+      <a class="modal-add-product__add-button">Добавить</a>
+    </div>
   </body>
 </html>
