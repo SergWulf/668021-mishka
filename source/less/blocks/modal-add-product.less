@@ -1,14 +1,9 @@
 .modal-add-product__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
+  .font-parameters(25px; 30px; bold; @black);
 }
 
 .modal-add-product__description {
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: normal;
-  color: #444444;
+  .font-parameters(15px; 30px; normal; @gray-tone-one);
 }
 
 .modal-add-product__list {
@@ -16,10 +11,7 @@
 }
 
 .modal-add-product__list-item {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-  color: #444444;
+  .font-parameters(17px; 16px; bold; @gray-tone-one);
 }
 
 .modal-add-product__add-button {
@@ -29,10 +21,7 @@
   width: 260px;
   height: 52px;
 
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-  color: #ffffff;
+  .font-parameters(17px; 16px; bold; @white);
 
-  background-color: #63d1bb;
+  background-color: @light-green;
 }

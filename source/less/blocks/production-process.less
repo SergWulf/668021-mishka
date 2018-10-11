@@ -1,25 +1,17 @@
 .production-process {
   margin-bottom: 60px;
 
-  border: 1px solid #ededed;
+  border: 1px solid @border-color;
 }
 
 .production-process__title {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+  .font-parameters(17px; 24px; bold; @black);
 }
 
 .production-process__description {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #444444;
+  .font-parameters(13px; 24px; normal; @gray-tone-one);
 }
 
 .production-process__to-order {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-  color: #444444;
+  .font-parameters(17px; 16px; bold; @gray-tone-one);
 }

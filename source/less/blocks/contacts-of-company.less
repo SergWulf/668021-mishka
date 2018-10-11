@@ -4,14 +4,12 @@
 }
 
 .contacts-of-company__title {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
+  .font-parameters(18px; 30px; bold; @black);
 }
 
 .contacts-of-company__address,
 .contacts-of-company__email {
-  color: #444444;
+  color: @gray-tone-one;
 }
 
 .contacts-of-company__map {
@@ -22,7 +20,5 @@
 .contacts-of-company__write_us {
   margin-bottom: 39px;
 
-  font-size: 18px;
-  line-height: 20px;
-  color: #444444;
+  .font-parameters(18px; 20px; bold; @gray-tone-one);
 }

@@ -32,31 +32,53 @@
         </ul>
       </nav>
     </header>
-    <main class="container-content container">
-      <form class="form-order" action="https://echo.htmlacademy.ru">
-        <h2 class="form-order__title">Вязание на заказ</h2>
-        <p class="form-order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <main class="container-content">
+      <section class="form-header">
+        <h2 class="form-header__title container-center">Вязание на заказ</h2>
+        <p class="form-header__description container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      </section>
+      <form class="form-order container" action="https://echo.htmlacademy.ru">
         <fieldset class="form-order__fieldset">
           <legend class="form-order__fieldset-title">Тип</legend>
-          <input class="form-order__radio" type="radio" name="accessory-for-interior" id="accessory-for-interior-id" checked>
-          <label class="form-order__radio-label" for="accessory-for-interior-id">Акцессуар для интерьера</label>
-          <input class="form-order__radio" type="radio" name="child-toy" id="child-toy-id">
-          <label class="form-order__radio-label" for="child-toy-id">Детская игрушка</label>
+          <ul class="form-order__list">
+            <li>
+              <input class="form-order__radio" type="radio" name="accessory-for-interior" id="accessory-for-interior-id" checked>
+              <label class="form-order__radio-label" for="accessory-for-interior-id">Акцессуар для интерьера</label>
+            </li>
+            <li>
+              <input class="form-order__radio" type="radio" name="child-toy" id="child-toy-id">
+              <label class="form-order__radio-label" for="child-toy-id">Детская игрушка</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-order__fieldset">
           <legend class="form-order__fieldset-title">Цвет</legend>
-          <input class="form-order__checkbox" type="checkbox" name="gray" id="gray-id" checked>
-          <label class="form-order__checkbox-label" for="gray-id">Серый</label>
-          <input class="form-order__checkbox" type="checkbox" name="white" id="white-id" checked>
-          <label class="form-order__checkbox-label" for="white-id">Белый</label>
-          <input class="form-order__checkbox" type="checkbox" name="tiffany" id="tiffany-id">
-          <label class="form-order__checkbox-label" for="tiffany-id">"Тиффани"</label>
-          <input class="form-order__checkbox" type="checkbox" name="black" id="black-id">
-          <label class="form-order__checkbox-label" for="black-id">Чёрный</label>
-          <input class="form-order__checkbox" type="checkbox" name="pink" id="pink-id">
-          <label class="form-order__checkbox-label" for="pink-id">Розовый</label>
-          <input class="form-order__checkbox" type="checkbox" name="orange" id="orange-id">
-          <label class="form-order__checkbox-label" for="orange-id">Оранжевый</label>
+          <ul class="form-order__list">
+            <li>
+              <input class="form-order__checkbox" type="checkbox" name="gray" id="gray-id" checked>
+              <label class="form-order__checkbox-label" for="gray-id">Серый</label>
+            </li>
+            <li>
+              <input class="form-order__checkbox" type="checkbox" name="white" id="white-id" checked>
+              <label class="form-order__checkbox-label" for="white-id">Белый</label>
+            </li>
+            <li>
+              <input class="form-order__checkbox" type="checkbox" name="tiffany" id="tiffany-id">
+              <label class="form-order__checkbox-label" for="tiffany-id">"Тиффани"</label>
+            </li>
+            <li>
+              <input class="form-order__checkbox" type="checkbox" name="black" id="black-id">
+              <label class="form-order__checkbox-label" for="black-id">Чёрный</label>
+            </li>
+            <li>
+              <input class="form-order__checkbox" type="checkbox" name="pink" id="pink-id">
+              <label class="form-order__checkbox-label" for="pink-id">Розовый</label>
+            </li>
+            <li>
+              <input class="form-order__checkbox" type="checkbox" name="orange" id="orange-id">
+              <label class="form-order__checkbox-label" for="orange-id">Оранжевый</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="form-order__fieldset">
           <legend class="form-order__fieldset-title">ФИО</legend>
