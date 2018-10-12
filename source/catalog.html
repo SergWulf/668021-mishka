@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - каталог</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <div class="main-header__logo-block">
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logo.png" alt="Логотип &laquo;Мишка&raquo;">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" alt="Логотип &laquo;Мишка&raquo;">
         </a>
         <button class="main-header__open-menu" href="#"></button>
       </div>
@@ -33,11 +34,11 @@
     </header>
     <main class="container-content">
       <section class="catalog">
-        <h1 class="catalog__title">Каталог</h1>
-        <ul class="catalog-list-products list-products">
+        <h1 class="catalog__title container-center">Каталог</h1>
+        <ul class="catalog-list-products list-products container">
           <li class="list-products__item">
             <article class="card-product">
-              <a class="card-product__link-to-order"><img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195"></a>
+              <a class="card-product__link-to-order"><img class="card-product__content-image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"></a>
               <a class="card-product__name">Зайчик-попрыгайчик</a>
               <p class="card-product__description">Рост 30 см, вес 200 гр</p>
               <p class="card-product__price">1 200 руб.</p>
@@ -45,7 +46,7 @@
           </li>
           <li class="list-products__item">
             <article class="card-product">
-              <a class="card-product__link-to-order"><img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195"></a>
+              <a class="card-product__link-to-order"><img class="card-product__content-image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"></a>
               <a class="card-product__name">Корзинка для белья</a>
               <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
               <p class="card-product__price">690 руб.</p>
@@ -53,7 +54,7 @@
           </li>
           <li class="list-products__item">
             <article class="card-product">
-              <a class="card-product__link-to-order"><img class="card-product__content-image" src="http://placehold.it/260x195" width="260" height="195"></a>
+              <a class="card-product__link-to-order"><img class="card-product__content-image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"></a>
               <a class="card-product__name">Большая корзинка для игрушек</a>
               <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
               <p class="card-product__price">1 500 руб.</p>
@@ -61,14 +62,14 @@
           </li>
         </ul>
       </section>
-      <article class="production-process">
+      <article class="production-process container">
         <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video" width="260" height="150"></video>
+        <video class="production-process__video" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
         <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a class="production-process__to-order btn" href="order.html">Сделать заказ</a>
       </article>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="social-links">
         <ul class="social-links__list social-list">
           <li class="social-links__instagram">
@@ -87,7 +88,7 @@
         <a class="developed-by__url" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </div>
     </footer>
-    <div class="modal-add-product">
+    <div class="modal-add-product visually-hidden">
       <h2 class="modal-add-product__title">Добавить в корзину</h2>
       <p class="modal-add-product__description">Выберите размер:</p>
       <ul class="modal-add-product__list">
