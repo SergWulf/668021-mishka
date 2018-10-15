@@ -22,6 +22,14 @@ body {
   color: @black;
 
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+  }
 }
 
 a {
@@ -42,6 +50,18 @@ img {
   width: 260px;
   margin: 0 auto;
   padding: 0 30px;
+
+  outline: 2px solid crimson;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width - 100px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width - 200px;
+    padding: 0 100px;
+  }
 }
 
 .container-center {
