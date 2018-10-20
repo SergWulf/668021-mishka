@@ -4,4 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 2px solid yellow;
+
+  background: url("../img/logo-mobile.svg") no-repeat 0 0;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/logo-tablet.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/logo-desktop.svg") no-repeat 0 0;
+  }
 }
