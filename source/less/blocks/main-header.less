@@ -1,18 +1,43 @@
 .main-header__logo-block {
-  height: 80px;
-  min-height: 80px;
+  height: 78px;
+  min-height: 78px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  outline: 2px solid yellow;
+
+  border-top: 1px solid @border-color-menu;
+  border-bottom: 1px solid @border-color-menu;
+}
+
+.main-header__logo-link {
+  display: block;
+  height: 36px;
+  width: 86px;
+  margin-left: 86px;
 
   background: url("../img/logo-mobile.svg") no-repeat 0 0;
 
   @media (min-width: @tablet-width) {
+    height: 47px;
+    width: 113px;
+    margin-left: 0;
     background: url("../img/logo-tablet.svg") no-repeat 0 0;
   }
 
   @media (min-width: @desktop-width) {
+    height: 73px;
+    width: 149px;
     background: url("../img/logo-desktop.svg") no-repeat 0 0;
   }
+}
+
+.main-header__open-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 21px;
+  width: 21px;
+
+  border: none;
+  background: url("../img/icon-menu-open.svg") no-repeat 0 0;
 }
