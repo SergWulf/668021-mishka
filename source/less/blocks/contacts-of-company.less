@@ -1,6 +1,7 @@
 .contacts-of-company {
   padding-top: 56px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
+  margin-left: -2px;
 }
 
 .contacts-of-company__title {
@@ -11,10 +12,11 @@
 .contacts-of-company__email-and-address {
   padding: 0;
   border-collapse: collapse;
+  margin-bottom: 36px;
 }
 
 .contacts-of-company__email-and-address td {
-  height: 60px;
+  height: 58px;
   vertical-align: top;
 }
 
@@ -22,8 +24,12 @@
   width: 75px;
 }
 
-.contacts-of-company__email-block td:first-child {
+.contacts-of-company__address-block td:first-child {
   width: 75px;
+}
+
+.contacts-of-company__address-block td:last-child {
+  padding-right: 40px;
 }
 
 .contacts-of-company__address,
@@ -34,10 +40,13 @@
 .contacts-of-company__map {
   margin-bottom: 39px;
   display: block;
+  min-height: 457px;
+  height: 457px;
 }
 
 .contacts-of-company__write_us {
   margin-bottom: 39px;
 
   .font-parameters(18px; 20px; bold; @gray-tone-one);
+  text-transform: uppercase;
 }
